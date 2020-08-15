@@ -14,12 +14,10 @@ setup(name='TracLogViewer',
       license='GPL',
       install_requires=['Trac'],
       packages=find_packages(exclude=['ez_setup', 'examples', '*tests*']),
-      include_package_data=True,
       package_data={'logviewer': [
           'templates/*.html',
           'htdocs/css/*.css',
       ]},
-      zip_safe=True,
       entry_points={'trac.plugins': [
             'logviewer = logviewer.web_ui'
       ]},
